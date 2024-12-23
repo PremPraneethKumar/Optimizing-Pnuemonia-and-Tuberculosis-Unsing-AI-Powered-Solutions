@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict ~ Pneumonia and Tuberculosis Prediction</title>
+    <style>
+a 
+{
+  text-decoration:none;
+}
+body {
+
+    text-align: center;
+    background-image: url("{{ url_for('static', filename='images/1.jpg') }}");
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #0cb8b6, #f3f2f3);
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        .form-group input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4dc8c6;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0cb8b6;
+        }
+    </style>
+</head>
+<body noscroll><br>
+    <table style="width:100%">
+        <tr style="background:#31afad; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <td colspan="8" align="center" style="padding:10px; font-size: 20px;">
+            <h3 style="color:#fff; font-family: Georgia;"><b>Pneumonia and Tuberculosis Prediction</b></h3>
+            </td>
+        </tr>
+    </table>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <div class="container">
+        <form action="{{ url_for('predict') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="imageUpload">Upload Chest X-Ray Image</label><br>
+                <input type="file" id="imageUpload" name="image" required>
+            </div><br>
+            <div class="form-group">
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+    </div>
+    <br><br><br><br><br><br>
+    <br><br>
+    <table style="width:100%">
+        <tr style="background:#41aeac; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <td colspan="8" align="center" style="padding:10px; font-size: 15px;">
+            <h3 style="color:#fff; font-family: Georgia;"><b>2024 Project Batch 15 Copy Rights</b></h3>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+</body>
+</html>

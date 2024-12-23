@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result ~ Pneumonia and Tuberculosis Prediction</title>
+    <style>
+a 
+{
+  text-decoration:none;
+}
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #069996, #f3f2f3);
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+}
+.uploaded-image {
+    max-width: 100%;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #14c1be, #f3f2f3);
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        .form-group input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            font-size: 20px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #0cb8b6;
+            color: #fff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0cb8b6;
+        }
+    </style>
+</head>
+<body noscroll><br>
+    <table style="width:100%">
+        <tr style="background:#33a6a4; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <td colspan="8" align="center" style="padding:10px; font-size: 20px;">
+            <h3 style="color:#fff; font-family: Georgia;"><b>Pneumonia and Tuberculosis Prediction</b></h3>
+            </td>
+        </tr>
+    </table>
+<br>
+<br><br>
+    <div class="container">
+        <div class="result">
+            <img src="{{ image_url }}" alt="Uploaded Image" class="uploaded-image">
+            <p style="font-size: 20px;">The model predicts: <strong>{{ predicted_class }}</strong></p>
+        </div>
+        <a href="{{ url_for('index') }}" class="back-link">Upload Another Image</a>
+    </div>
+    <br><br><br>
+    <table style="width:100%">
+        <tr style="background:#47a7a5; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+            <td colspan="8" align="center" style="padding:10px; font-size: 15px;">
+            <h3 style="color:#fff; font-family: Georgia;"><b>2024 Project Batch 15 Copy Rights</b></h3>
+            </td>
+        </tr>
+    </table><br>
+</body>
+</html>
